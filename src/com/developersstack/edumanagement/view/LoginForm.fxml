@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane fx:id="context" prefHeight="617.0" prefWidth="947.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.developersstack.edumanagement.controller.LoginFormController">
+   <children>
+      <Label layoutX="217.0" layoutY="27.0" text="Login" textFill="#2c04f2">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Separator layoutX="16.0" layoutY="66.0" prefHeight="14.0" prefWidth="471.0" />
+      <TextField fx:id="txtEmail" layoutX="47.0" layoutY="159.0" prefHeight="51.0" prefWidth="414.0" promptText="email" />
+      <PasswordField fx:id="txtPassword" layoutX="47.0" layoutY="234.0" prefHeight="51.0" prefWidth="414.0" promptText="password" />
+      <Hyperlink layoutX="329.0" layoutY="291.0" onAction="#forgotPasswordOnAction" text="forgot password? " underline="true" />
+      <Button layoutX="43.0" layoutY="350.0" mnemonicParsing="false" onAction="#loginOnAction" prefHeight="43.0" prefWidth="414.0" style="-fx-background-color: #0D99FF;" text="Login" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Button>
+      <Label layoutX="233.0" layoutY="406.0" text="OR" textFill="#2c04f2">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Button layoutX="43.0" layoutY="451.0" mnemonicParsing="false" onAction="#createAnAccountOnAction" prefHeight="43.0" prefWidth="414.0" style="-fx-background-color: #1A2238;" text="Create an account" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Button>
+      <ImageView fitHeight="610.0" fitWidth="436.0" layoutX="508.0" layoutY="4.0" pickOnBounds="true">
+         <image>
+            <Image url="@../assets/jumbotron-hd-500.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
